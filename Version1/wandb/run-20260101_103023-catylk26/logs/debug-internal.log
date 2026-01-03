@@ -1,0 +1,12 @@
+{"time":"2026-01-01T10:30:26.3487631+01:00","level":"INFO","msg":"stream: starting","core version":"0.23.1"}
+{"time":"2026-01-01T10:30:27.4731315+01:00","level":"INFO","msg":"stream: created new stream","id":"catylk26"}
+{"time":"2026-01-01T10:30:27.4731315+01:00","level":"INFO","msg":"handler: started","stream_id":"catylk26"}
+{"time":"2026-01-01T10:30:27.4753144+01:00","level":"INFO","msg":"stream: started","id":"catylk26"}
+{"time":"2026-01-01T10:30:27.4753144+01:00","level":"INFO","msg":"sender: started","stream_id":"catylk26"}
+{"time":"2026-01-01T10:30:27.4753144+01:00","level":"INFO","msg":"writer: started","stream_id":"catylk26"}
+{"time":"2026-01-01T10:43:05.1187157+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-01-01T10:43:05.3482147+01:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-01-01T10:43:05.3580457+01:00","level":"INFO","msg":"stream: closing","id":"catylk26"}
+{"time":"2026-01-01T10:43:05.3580457+01:00","level":"INFO","msg":"handler: closed","stream_id":"catylk26"}
+{"time":"2026-01-01T10:43:05.3585654+01:00","level":"INFO","msg":"sender: closed","stream_id":"catylk26"}
+{"time":"2026-01-01T10:43:05.3585654+01:00","level":"INFO","msg":"stream: closed","id":"catylk26"}

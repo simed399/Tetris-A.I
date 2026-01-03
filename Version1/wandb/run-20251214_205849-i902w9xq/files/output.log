@@ -1,0 +1,187 @@
+CNN Model Loaded from model/cnn_model.pth
+Game 10/5000 | Score: 0 | Lines: 0 | Avg Score: 32.0 | Epsilon: 0.214 | Loss: 788.4174
+Game 20/5000 | Score: 40 | Lines: 1 | Avg Score: 24.0 | Epsilon: 0.203 | Loss: 1362.8670
+Game 30/5000 | Score: 40 | Lines: 1 | Avg Score: 24.0 | Epsilon: 0.193 | Loss: 17.3650
+Game 40/5000 | Score: 140 | Lines: 3 | Avg Score: 40.0 | Epsilon: 0.184 | Loss: 1523.2770
+Game 50/5000 | Score: 80 | Lines: 2 | Avg Score: 26.0 | Epsilon: 0.175 | Loss: 3762.6714
+Game 60/5000 | Score: 120 | Lines: 3 | Avg Score: 68.0 | Epsilon: 0.166 | Loss: 250.4300
+Game 70/5000 | Score: 0 | Lines: 0 | Avg Score: 80.0 | Epsilon: 0.158 | Loss: 495.6850
+Game 80/5000 | Score: 80 | Lines: 2 | Avg Score: 100.0 | Epsilon: 0.150 | Loss: 933.7309
+Game 90/5000 | Score: 40 | Lines: 1 | Avg Score: 106.0 | Epsilon: 0.143 | Loss: 5742.6079
+Game 100/5000 | Score: 40 | Lines: 1 | Avg Score: 122.0 | Epsilon: 0.136 | Loss: 6669.5244
+CNN Model saved successfully!
+Game 110/5000 | Score: 300 | Lines: 7 | Avg Score: 108.0 | Epsilon: 0.129 | Loss: 1686.6177
+Game 120/5000 | Score: 120 | Lines: 3 | Avg Score: 152.0 | Epsilon: 0.123 | Loss: 716.2414
+Game 130/5000 | Score: 40 | Lines: 1 | Avg Score: 132.0 | Epsilon: 0.117 | Loss: 1174.8135
+Game 140/5000 | Score: 200 | Lines: 5 | Avg Score: 148.0 | Epsilon: 0.111 | Loss: 1189.0422
+Game 150/5000 | Score: 40 | Lines: 1 | Avg Score: 178.0 | Epsilon: 0.106 | Loss: 5571.9630
+Game 160/5000 | Score: 160 | Lines: 4 | Avg Score: 128.0 | Epsilon: 0.101 | Loss: 8673.3307
+Game 170/5000 | Score: 160 | Lines: 4 | Avg Score: 150.0 | Epsilon: 0.096 | Loss: 536.7228
+Game 180/5000 | Score: 40 | Lines: 1 | Avg Score: 138.0 | Epsilon: 0.091 | Loss: 583.4694
+Game 190/5000 | Score: 120 | Lines: 3 | Avg Score: 96.0 | Epsilon: 0.087 | Loss: 622.1111
+Game 200/5000 | Score: 160 | Lines: 4 | Avg Score: 132.0 | Epsilon: 0.082 | Loss: 896.6411
+CNN Model saved successfully!
+Game 210/5000 | Score: 120 | Lines: 3 | Avg Score: 136.0 | Epsilon: 0.078 | Loss: 164.2792
+Game 220/5000 | Score: 100 | Lines: 2 | Avg Score: 150.0 | Epsilon: 0.075 | Loss: 1995.6991
+Game 230/5000 | Score: 240 | Lines: 6 | Avg Score: 172.0 | Epsilon: 0.071 | Loss: 2122.7610
+Game 240/5000 | Score: 0 | Lines: 0 | Avg Score: 196.0 | Epsilon: 0.067 | Loss: 6329.9525
+Game 250/5000 | Score: 280 | Lines: 6 | Avg Score: 166.0 | Epsilon: 0.064 | Loss: 1235.5436
+Game 260/5000 | Score: 120 | Lines: 3 | Avg Score: 228.0 | Epsilon: 0.061 | Loss: 5716.1850
+Game 270/5000 | Score: 160 | Lines: 4 | Avg Score: 150.0 | Epsilon: 0.058 | Loss: 1388.5119
+Game 280/5000 | Score: 120 | Lines: 3 | Avg Score: 238.0 | Epsilon: 0.055 | Loss: 898.2885
+Game 290/5000 | Score: 240 | Lines: 6 | Avg Score: 304.0 | Epsilon: 0.052 | Loss: 952.7482
+Game 300/5000 | Score: 40 | Lines: 1 | Avg Score: 184.0 | Epsilon: 0.050 | Loss: 635.7801
+CNN Model saved successfully!
+Game 310/5000 | Score: 40 | Lines: 1 | Avg Score: 226.0 | Epsilon: 0.047 | Loss: 3696.6480
+Game 320/5000 | Score: 380 | Lines: 9 | Avg Score: 182.0 | Epsilon: 0.045 | Loss: 7327.5495
+Game 330/5000 | Score: 80 | Lines: 2 | Avg Score: 204.0 | Epsilon: 0.043 | Loss: 3062.3813
+Game 340/5000 | Score: 380 | Lines: 9 | Avg Score: 224.0 | Epsilon: 0.041 | Loss: 1189.1725
+Game 350/5000 | Score: 180 | Lines: 4 | Avg Score: 160.0 | Epsilon: 0.039 | Loss: 8821.8199
+Game 360/5000 | Score: 380 | Lines: 9 | Avg Score: 152.0 | Epsilon: 0.037 | Loss: 1041.1120
+Game 370/5000 | Score: 260 | Lines: 6 | Avg Score: 258.0 | Epsilon: 0.035 | Loss: 828.9458
+Game 380/5000 | Score: 140 | Lines: 3 | Avg Score: 198.0 | Epsilon: 0.033 | Loss: 2500.9421
+Game 390/5000 | Score: 320 | Lines: 8 | Avg Score: 256.0 | Epsilon: 0.032 | Loss: 2903.4402
+Game 400/5000 | Score: 160 | Lines: 4 | Avg Score: 266.0 | Epsilon: 0.030 | Loss: 1045.8829
+CNN Model saved successfully!
+Game 410/5000 | Score: 420 | Lines: 10 | Avg Score: 372.0 | Epsilon: 0.029 | Loss: 1366.6598
+Game 420/5000 | Score: 100 | Lines: 2 | Avg Score: 146.0 | Epsilon: 0.027 | Loss: 2050.0647
+Game 430/5000 | Score: 240 | Lines: 5 | Avg Score: 224.0 | Epsilon: 0.026 | Loss: 724.7343
+Game 440/5000 | Score: 120 | Lines: 3 | Avg Score: 198.0 | Epsilon: 0.025 | Loss: 2071.0817
+Game 450/5000 | Score: 240 | Lines: 6 | Avg Score: 284.0 | Epsilon: 0.024 | Loss: 1135.7843
+Game 460/5000 | Score: 320 | Lines: 8 | Avg Score: 228.0 | Epsilon: 0.022 | Loss: 7807.5091
+Game 470/5000 | Score: 120 | Lines: 3 | Avg Score: 226.0 | Epsilon: 0.021 | Loss: 1635.8849
+Game 480/5000 | Score: 200 | Lines: 5 | Avg Score: 204.0 | Epsilon: 0.020 | Loss: 2147.0646
+Game 490/5000 | Score: 40 | Lines: 1 | Avg Score: 144.0 | Epsilon: 0.019 | Loss: 1349.3709
+Game 500/5000 | Score: 200 | Lines: 4 | Avg Score: 152.0 | Epsilon: 0.018 | Loss: 2084.5259
+CNN Model saved successfully!
+Game 510/5000 | Score: 80 | Lines: 2 | Avg Score: 130.0 | Epsilon: 0.017 | Loss: 1793.4995
+Game 520/5000 | Score: 40 | Lines: 1 | Avg Score: 216.0 | Epsilon: 0.017 | Loss: 7252.6734
+Game 530/5000 | Score: 500 | Lines: 11 | Avg Score: 208.0 | Epsilon: 0.016 | Loss: 1406.3284
+Game 540/5000 | Score: 160 | Lines: 4 | Avg Score: 208.0 | Epsilon: 0.015 | Loss: 864.6127
+Game 550/5000 | Score: 40 | Lines: 1 | Avg Score: 218.0 | Epsilon: 0.014 | Loss: 1284.6031
+Game 560/5000 | Score: 160 | Lines: 4 | Avg Score: 200.0 | Epsilon: 0.014 | Loss: 2051.5676
+Game 570/5000 | Score: 0 | Lines: 0 | Avg Score: 184.0 | Epsilon: 0.013 | Loss: 2301.0670
+Game 580/5000 | Score: 120 | Lines: 3 | Avg Score: 176.0 | Epsilon: 0.012 | Loss: 2929.5991
+Game 590/5000 | Score: 160 | Lines: 4 | Avg Score: 210.0 | Epsilon: 0.012 | Loss: 1778.9611
+Game 600/5000 | Score: 180 | Lines: 4 | Avg Score: 260.0 | Epsilon: 0.011 | Loss: 1181.7816
+CNN Model saved successfully!
+Game 610/5000 | Score: 440 | Lines: 10 | Avg Score: 280.0 | Epsilon: 0.011 | Loss: 3652.7794
+Game 620/5000 | Score: 80 | Lines: 2 | Avg Score: 390.0 | Epsilon: 0.010 | Loss: 8433.5461
+Game 630/5000 | Score: 400 | Lines: 10 | Avg Score: 324.0 | Epsilon: 0.010 | Loss: 2829.8194
+Game 640/5000 | Score: 240 | Lines: 6 | Avg Score: 252.0 | Epsilon: 0.010 | Loss: 1620.0860
+Game 650/5000 | Score: 340 | Lines: 8 | Avg Score: 388.0 | Epsilon: 0.010 | Loss: 2251.6827
+Game 660/5000 | Score: 200 | Lines: 5 | Avg Score: 284.0 | Epsilon: 0.010 | Loss: 2994.2260
+Game 670/5000 | Score: 160 | Lines: 4 | Avg Score: 286.0 | Epsilon: 0.010 | Loss: 1793.7629
+Game 680/5000 | Score: 120 | Lines: 3 | Avg Score: 334.0 | Epsilon: 0.010 | Loss: 1385.9412
+Game 690/5000 | Score: 220 | Lines: 5 | Avg Score: 304.0 | Epsilon: 0.010 | Loss: 1468.8671
+Game 700/5000 | Score: 360 | Lines: 9 | Avg Score: 484.0 | Epsilon: 0.010 | Loss: 1867.4815
+CNN Model saved successfully!
+Game 710/5000 | Score: 120 | Lines: 3 | Avg Score: 396.0 | Epsilon: 0.010 | Loss: 1501.4258
+Game 720/5000 | Score: 640 | Lines: 13 | Avg Score: 448.0 | Epsilon: 0.010 | Loss: 10667.5689
+Game 730/5000 | Score: 120 | Lines: 3 | Avg Score: 236.0 | Epsilon: 0.010 | Loss: 9087.6484
+Game 740/5000 | Score: 80 | Lines: 2 | Avg Score: 458.0 | Epsilon: 0.010 | Loss: 7375.6777
+Game 750/5000 | Score: 220 | Lines: 5 | Avg Score: 340.0 | Epsilon: 0.010 | Loss: 993.5188
+Game 760/5000 | Score: 400 | Lines: 10 | Avg Score: 484.0 | Epsilon: 0.010 | Loss: 3173.4126
+Game 770/5000 | Score: 660 | Lines: 13 | Avg Score: 480.0 | Epsilon: 0.010 | Loss: 6506.3703
+Game 780/5000 | Score: 1060 | Lines: 18 | Avg Score: 586.0 | Epsilon: 0.010 | Loss: 18567.2251
+Game 790/5000 | Score: 160 | Lines: 4 | Avg Score: 412.0 | Epsilon: 0.010 | Loss: 2471.4559
+Game 800/5000 | Score: 960 | Lines: 17 | Avg Score: 512.0 | Epsilon: 0.010 | Loss: 2854.6829
+CNN Model saved successfully!
+Game 810/5000 | Score: 580 | Lines: 12 | Avg Score: 350.0 | Epsilon: 0.010 | Loss: 6375.7979
+Game 820/5000 | Score: 400 | Lines: 10 | Avg Score: 490.0 | Epsilon: 0.010 | Loss: 9693.5268
+Game 830/5000 | Score: 200 | Lines: 5 | Avg Score: 324.0 | Epsilon: 0.010 | Loss: 1041.7349
+Game 840/5000 | Score: 780 | Lines: 14 | Avg Score: 318.0 | Epsilon: 0.010 | Loss: 3649.1679
+Game 850/5000 | Score: 640 | Lines: 13 | Avg Score: 370.0 | Epsilon: 0.010 | Loss: 2022.3921
+Game 860/5000 | Score: 160 | Lines: 4 | Avg Score: 554.0 | Epsilon: 0.010 | Loss: 9170.0693
+Game 870/5000 | Score: 280 | Lines: 7 | Avg Score: 674.0 | Epsilon: 0.010 | Loss: 9871.7446
+Game 880/5000 | Score: 340 | Lines: 8 | Avg Score: 610.0 | Epsilon: 0.010 | Loss: 13074.7440
+Game 890/5000 | Score: 440 | Lines: 10 | Avg Score: 578.0 | Epsilon: 0.010 | Loss: 2196.5746
+Game 900/5000 | Score: 560 | Lines: 12 | Avg Score: 452.0 | Epsilon: 0.010 | Loss: 2548.6469
+CNN Model saved successfully!
+Game 910/5000 | Score: 300 | Lines: 7 | Avg Score: 434.0 | Epsilon: 0.010 | Loss: 3906.6132
+Game 920/5000 | Score: 360 | Lines: 9 | Avg Score: 322.0 | Epsilon: 0.010 | Loss: 3524.6414
+Game 930/5000 | Score: 400 | Lines: 9 | Avg Score: 408.0 | Epsilon: 0.010 | Loss: 21319.7596
+Game 940/5000 | Score: 120 | Lines: 3 | Avg Score: 386.0 | Epsilon: 0.010 | Loss: 8904.3682
+Game 950/5000 | Score: 500 | Lines: 8 | Avg Score: 468.0 | Epsilon: 0.010 | Loss: 18200.9185
+Game 960/5000 | Score: 420 | Lines: 9 | Avg Score: 290.0 | Epsilon: 0.010 | Loss: 10168.8757
+Game 970/5000 | Score: 200 | Lines: 5 | Avg Score: 504.0 | Epsilon: 0.010 | Loss: 3171.9129
+Game 980/5000 | Score: 420 | Lines: 10 | Avg Score: 400.0 | Epsilon: 0.010 | Loss: 8974.3876
+Game 990/5000 | Score: 240 | Lines: 6 | Avg Score: 262.0 | Epsilon: 0.010 | Loss: 10862.9050
+Game 1000/5000 | Score: 920 | Lines: 14 | Avg Score: 622.0 | Epsilon: 0.010 | Loss: 11266.2405
+CNN Model saved successfully!
+Game 1010/5000 | Score: 280 | Lines: 7 | Avg Score: 360.0 | Epsilon: 0.010 | Loss: 6696.0011
+Game 1020/5000 | Score: 420 | Lines: 10 | Avg Score: 324.0 | Epsilon: 0.010 | Loss: 5201.6762
+Game 1030/5000 | Score: 120 | Lines: 3 | Avg Score: 360.0 | Epsilon: 0.010 | Loss: 1839.2421
+Game 1040/5000 | Score: 600 | Lines: 10 | Avg Score: 306.0 | Epsilon: 0.010 | Loss: 9947.1220
+Game 1050/5000 | Score: 200 | Lines: 5 | Avg Score: 426.0 | Epsilon: 0.010 | Loss: 1637.4821
+Game 1060/5000 | Score: 260 | Lines: 6 | Avg Score: 290.0 | Epsilon: 0.010 | Loss: 1682.9795
+Game 1070/5000 | Score: 300 | Lines: 7 | Avg Score: 442.0 | Epsilon: 0.010 | Loss: 8027.4185
+Game 1080/5000 | Score: 220 | Lines: 5 | Avg Score: 340.0 | Epsilon: 0.010 | Loss: 14299.7150
+Game 1090/5000 | Score: 380 | Lines: 9 | Avg Score: 304.0 | Epsilon: 0.010 | Loss: 6487.2832
+Game 1100/5000 | Score: 340 | Lines: 8 | Avg Score: 372.0 | Epsilon: 0.010 | Loss: 10733.7229
+CNN Model saved successfully!
+Game 1110/5000 | Score: 400 | Lines: 9 | Avg Score: 360.0 | Epsilon: 0.010 | Loss: 5948.5344
+Game 1120/5000 | Score: 0 | Lines: 0 | Avg Score: 64.0 | Epsilon: 0.010 | Loss: 20378539.4231
+Game 1130/5000 | Score: 0 | Lines: 0 | Avg Score: 28.0 | Epsilon: 0.010 | Loss: 359196187.8121
+Game 1140/5000 | Score: 0 | Lines: 0 | Avg Score: 24.0 | Epsilon: 0.010 | Loss: 1748151.5950
+Game 1150/5000 | Score: 0 | Lines: 0 | Avg Score: 24.0 | Epsilon: 0.010 | Loss: 799726.6488
+Game 1160/5000 | Score: 40 | Lines: 1 | Avg Score: 16.0 | Epsilon: 0.010 | Loss: 604239.5551
+Game 1170/5000 | Score: 0 | Lines: 0 | Avg Score: 32.0 | Epsilon: 0.010 | Loss: 369594.1954
+Game 1180/5000 | Score: 80 | Lines: 2 | Avg Score: 36.0 | Epsilon: 0.010 | Loss: 55356948.1141
+Game 1190/5000 | Score: 0 | Lines: 0 | Avg Score: 20.0 | Epsilon: 0.010 | Loss: 294189.5337
+Game 1200/5000 | Score: 140 | Lines: 3 | Avg Score: 70.0 | Epsilon: 0.010 | Loss: 32179038.5420
+CNN Model saved successfully!
+Game 1210/5000 | Score: 300 | Lines: 7 | Avg Score: 88.0 | Epsilon: 0.010 | Loss: 24051480.0430
+Game 1220/5000 | Score: 40 | Lines: 1 | Avg Score: 52.0 | Epsilon: 0.010 | Loss: 15284210.6524
+Game 1230/5000 | Score: 0 | Lines: 0 | Avg Score: 44.0 | Epsilon: 0.010 | Loss: 9433728.8509
+Game 1240/5000 | Score: 0 | Lines: 0 | Avg Score: 94.0 | Epsilon: 0.010 | Loss: 6101958.5175
+Game 1250/5000 | Score: 80 | Lines: 2 | Avg Score: 148.0 | Epsilon: 0.010 | Loss: 4646821.8865
+Game 1260/5000 | Score: 120 | Lines: 3 | Avg Score: 166.0 | Epsilon: 0.010 | Loss: 28822.3845
+Game 1270/5000 | Score: 40 | Lines: 1 | Avg Score: 112.0 | Epsilon: 0.010 | Loss: 2522015.6443
+Game 1280/5000 | Score: 40 | Lines: 1 | Avg Score: 100.0 | Epsilon: 0.010 | Loss: 2141609.6555
+Game 1290/5000 | Score: 0 | Lines: 0 | Avg Score: 98.0 | Epsilon: 0.010 | Loss: 13786.6050
+Game 1300/5000 | Score: 80 | Lines: 2 | Avg Score: 92.0 | Epsilon: 0.010 | Loss: 1529280.7441
+CNN Model saved successfully!
+Game 1310/5000 | Score: 100 | Lines: 2 | Avg Score: 296.0 | Epsilon: 0.010 | Loss: 647358.8007
+Game 1320/5000 | Score: 0 | Lines: 0 | Avg Score: 104.0 | Epsilon: 0.010 | Loss: 427971.2573
+Game 1330/5000 | Score: 160 | Lines: 4 | Avg Score: 132.0 | Epsilon: 0.010 | Loss: 8275.2321
+Game 1340/5000 | Score: 120 | Lines: 3 | Avg Score: 126.0 | Epsilon: 0.010 | Loss: 13078.3884
+Game 1350/5000 | Score: 180 | Lines: 4 | Avg Score: 172.0 | Epsilon: 0.010 | Loss: 210890.0376
+Game 1360/5000 | Score: 320 | Lines: 7 | Avg Score: 122.0 | Epsilon: 0.010 | Loss: 15520.7826
+Game 1370/5000 | Score: 160 | Lines: 4 | Avg Score: 168.0 | Epsilon: 0.010 | Loss: 10043.3631
+Game 1380/5000 | Score: 40 | Lines: 1 | Avg Score: 194.0 | Epsilon: 0.010 | Loss: 12528.2313
+Game 1390/5000 | Score: 300 | Lines: 7 | Avg Score: 184.0 | Epsilon: 0.010 | Loss: 14339.3312
+Game 1400/5000 | Score: 200 | Lines: 5 | Avg Score: 288.0 | Epsilon: 0.010 | Loss: 16704.7453
+CNN Model saved successfully!
+Game 1410/5000 | Score: 80 | Lines: 2 | Avg Score: 320.0 | Epsilon: 0.010 | Loss: 6849.6912
+Game 1420/5000 | Score: 600 | Lines: 12 | Avg Score: 262.0 | Epsilon: 0.010 | Loss: 6846.1336
+Game 1430/5000 | Score: 80 | Lines: 2 | Avg Score: 292.0 | Epsilon: 0.010 | Loss: 6599.5457
+Game 1440/5000 | Score: 200 | Lines: 5 | Avg Score: 168.0 | Epsilon: 0.010 | Loss: 20862.8252
+Game 1450/5000 | Score: 240 | Lines: 6 | Avg Score: 214.0 | Epsilon: 0.010 | Loss: 3658.1524
+Game 1460/5000 | Score: 120 | Lines: 3 | Avg Score: 294.0 | Epsilon: 0.010 | Loss: 5707.1689
+Game 1470/5000 | Score: 240 | Lines: 6 | Avg Score: 274.0 | Epsilon: 0.010 | Loss: 2942.1283
+Game 1480/5000 | Score: 40 | Lines: 1 | Avg Score: 276.0 | Epsilon: 0.010 | Loss: 12068.4212
+Game 1490/5000 | Score: 720 | Lines: 13 | Avg Score: 282.0 | Epsilon: 0.010 | Loss: 12270.0166
+Game 1500/5000 | Score: 220 | Lines: 5 | Avg Score: 248.0 | Epsilon: 0.010 | Loss: 1822.9434
+CNN Model saved successfully!
+Game 1510/5000 | Score: 180 | Lines: 4 | Avg Score: 138.0 | Epsilon: 0.010 | Loss: 4135.9419
+Game 1520/5000 | Score: 460 | Lines: 7 | Avg Score: 224.0 | Epsilon: 0.010 | Loss: 4187.3372
+Game 1530/5000 | Score: 400 | Lines: 9 | Avg Score: 204.0 | Epsilon: 0.010 | Loss: 3815.3412
+Game 1540/5000 | Score: 340 | Lines: 8 | Avg Score: 306.0 | Epsilon: 0.010 | Loss: 2966.2494
+Game 1550/5000 | Score: 120 | Lines: 3 | Avg Score: 260.0 | Epsilon: 0.010 | Loss: 2231.9690
+Traceback (most recent call last):
+  File "C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\Version1\cnn.py", line 287, in <module>
+    train_cnn(slow_drop=slow_drop, games=args.games)
+  File "C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\Version1\cnn.py", line 225, in train_cnn
+    action = agent.get_action(tetris)
+  File "C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\Version1\cnn.py", line 103, in get_action
+    value = self.model(board_tensor).item()
+  File "C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\venv\lib\site-packages\torch\nn\modules\module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\venv\lib\site-packages\torch\nn\modules\module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\Version1\cnn.py", line 31, in forward
+    x = F.relu(self.conv2(x))
+  File "C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\venv\lib\site-packages\torch\nn\functional.py", line 1704, in relu
+    result = torch.relu(input)
+KeyboardInterrupt

@@ -1,0 +1,75 @@
+_wandb:
+    value:
+        cli_version: 0.23.1
+        e:
+            8fpdt3drwqdfi26rmeb4swpdg5s2a64v:
+                args:
+                    - --slow_drop
+                    - "false"
+                    - --games
+                    - "5000"
+                codePath: Version1\cnn.py
+                codePathLocal: cnn.py
+                cpu_count: 4
+                cpu_count_logical: 8
+                cudaVersion: "12.2"
+                disk:
+                    /:
+                        total: "509625757696"
+                        used: "484827402240"
+                email: 2016simob@gmail.com
+                executable: C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\venv\scripts\python.exe
+                git:
+                    commit: 320b4874c228fb05fe6196ff09802b3ff30dec2a
+                    remote: https://github.com/truonging/Tetris-A.I
+                gpu: NVIDIA GeForce GTX 1050
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Pascal
+                      cudaCores: 640
+                      memoryTotal: "2147483648"
+                      name: NVIDIA GeForce GTX 1050
+                      uuid: GPU-8a70459a-e848-162c-5199-acc41e7b6a10
+                host: DESKTOP-EO7ICM8
+                memory:
+                    total: "17092849664"
+                os: Windows-10-10.0.26100-SP0
+                program: C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\Version1\cnn.py
+                python: CPython 3.10.0
+                root: C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\Version1
+                startedAt: "2025-12-14T19:58:49.812266Z"
+                writerId: 8fpdt3drwqdfi26rmeb4swpdg5s2a64v
+        m: []
+        python_version: 3.10.0
+        t:
+            "1":
+                - 1
+            "2":
+                - 1
+            "3":
+                - 13
+                - 16
+            "4": 3.10.0
+            "5": 0.23.1
+            "8":
+                - 3
+            "12": 0.23.1
+            "13": windows-amd64
+batch_size:
+    value: 32
+epsilon_decay:
+    value: 0.995
+epsilon_min:
+    value: 0.01
+epsilon_start:
+    value: 1
+games:
+    value: 5000
+gamma:
+    value: 0.99
+learning_rate:
+    value: 0.001
+memory_size:
+    value: 10000
+slow_drop:
+    value: false

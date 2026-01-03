@@ -1,0 +1,10 @@
+No saved model found. Using a new model.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\Version1\train.py", line 245, in run_game
+    t.run_simulation(n)
+  File "C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\Version1\train.py", line 138, in run_simulation
+    reward += self.calculate_rewards(best_state)
+  File "C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\Version1\train.py", line 30, in calculate_rewards
+    total_heights, bumpiness, lines_removed, holes, y_pos, pillar = best_state
+ValueError: not enough values to unpack (expected 6, got 5)

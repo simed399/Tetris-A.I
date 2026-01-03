@@ -5,8 +5,9 @@ from timer import Timer
 from njit_startup import *
 
 class Game:
-    def __init__(self, player=False):
+    def __init__(self, player=False, ablate_feature=None):
         self.player = player
+        self.ablate_feature = ablate_feature
         # display
         self.surface = pygame.Surface((GAME_WIDTH,GAME_HEIGHT))
         self.display_surface = pygame.display.get_surface()
@@ -223,7 +224,7 @@ class Game:
                     full_rows = board[np.all(board > 0, axis=1)]
                     board, lines_removed = self._delete_lines(board, full_rows)
                     x_pivot = min(block.pos.x for block in piece.blocks)
-                    states[(x_pivot,r)] = self.get_state(board,lines_removed)
+                    states[(x_pivot,r)] = self.get_state(board, lines_removed, self.ablate_feature)
 
                 # after dropping, move back up
                 piece.move_to_y(0)
@@ -234,16 +235,35 @@ class Game:
 
         return states
 
-    def get_state(self, board=None, lines_removed=0):
+    def get_state(self, board=None, lines_removed=0, ablate_feature=None):
         if board is None:
             board = self.board
+        
+        # Use instance ablate_feature if not explicitly provided
+        if ablate_feature is None:
+            ablate_feature = self.ablate_feature
 
         y_pos = max(block.pos.y for block in self.tetromino.blocks)
         cols, total_heights, bumpiness = get_states_fast(board)
         pillar = any(cols[i-1]-cols[i]>=3 and cols[i+1]-cols[i]>=3 for i in range(1, len(cols)-1)) or cols[1]-cols[0]>=3 or cols[-2]-cols[-1]>=3
         holes = np.sum((board == 0) & (np.cumsum(board != 0, axis=0) > 0))
 
-        state = [total_heights, bumpiness, lines_removed, holes, y_pos, pillar]
+        # Create full state with all features
+        state_dict = {
+            'total_heights': total_heights,
+            'bumpiness': bumpiness,
+            'lines_removed': lines_removed,
+            'holes': holes,
+            'y_pos': y_pos,
+            'pillar': pillar
+        }
+        
+        # Remove ablated feature if specified
+        if ablate_feature and ablate_feature in state_dict:
+            del state_dict[ablate_feature]
+        
+        # Return state as list in consistent order
+        state = list(state_dict.values())
 
         return state
 

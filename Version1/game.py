@@ -5,9 +5,12 @@ from timer import Timer
 from njit_startup import *
 
 class Game:
-    def __init__(self, player=False, ablate_feature=None):
+    def __init__(self, player=False, ablate_feature=None, use_max_height=False, use_height_variance=False, use_danger_height=False):
         self.player = player
         self.ablate_feature = ablate_feature
+        self.use_max_height = use_max_height
+        self.use_height_variance = use_height_variance
+        self.use_danger_height = use_danger_height
         # display
         self.surface = pygame.Surface((GAME_WIDTH,GAME_HEIGHT))
         self.display_surface = pygame.display.get_surface()
@@ -245,12 +248,25 @@ class Game:
 
         y_pos = max(block.pos.y for block in self.tetromino.blocks)
         cols, total_heights, bumpiness = get_states_fast(board)
+        
+        # Choose height feature based on flags
+        if self.use_danger_height:
+            # Danger height: how much the tallest column exceeds safe threshold (15)
+            max_col_height = max(cols) if len(cols) > 0 else 0
+            height_feature = max(0, max_col_height - 15)
+        elif self.use_height_variance:
+            height_feature = np.std(cols) if len(cols) > 0 else 0  # Standard deviation
+        elif self.use_max_height:
+            height_feature = max(cols) if len(cols) > 0 else 0
+        else:
+            height_feature = total_heights
+        
         pillar = any(cols[i-1]-cols[i]>=3 and cols[i+1]-cols[i]>=3 for i in range(1, len(cols)-1)) or cols[1]-cols[0]>=3 or cols[-2]-cols[-1]>=3
         holes = np.sum((board == 0) & (np.cumsum(board != 0, axis=0) > 0))
 
         # Create full state with all features
         state_dict = {
-            'total_heights': total_heights,
+            'height': height_feature,  # Either total_heights, max_height, height_variance, or danger_height
             'bumpiness': bumpiness,
             'lines_removed': lines_removed,
             'holes': holes,

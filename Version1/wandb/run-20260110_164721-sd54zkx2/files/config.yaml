@@ -1,0 +1,89 @@
+_wandb:
+    value:
+        cli_version: 0.23.1
+        e:
+            f8j3n0ngfd04yazhyli05appwyg0cjoh:
+                cpu_count: 4
+                cpu_count_logical: 8
+                cudaVersion: "12.2"
+                disk:
+                    /:
+                        total: "509625757696"
+                        used: "471518883840"
+                email: 2016simob@gmail.com
+                executable: C:\Users\2016s\Desktop\tetris AI new\venv\scripts\python.exe
+                git:
+                    commit: beb991d59fdc0b7b770cfc84cf4a665f468c6218
+                    remote: https://github.com/simed399/Tetris-A.I.git
+                gpu: NVIDIA GeForce GTX 1050
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Pascal
+                      cudaCores: 640
+                      memoryTotal: "2147483648"
+                      name: NVIDIA GeForce GTX 1050
+                      uuid: GPU-8a70459a-e848-162c-5199-acc41e7b6a10
+                host: DESKTOP-EO7ICM8
+                memory:
+                    total: "17092849664"
+                os: Windows-10-10.0.26100-SP0
+                program: <python with no main file>
+                python: CPython 3.10.0
+                root: C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\Version1
+                startedAt: "2026-01-10T15:47:21.109927Z"
+                writerId: f8j3n0ngfd04yazhyli05appwyg0cjoh
+        m: []
+        python_version: 3.10.0
+        t:
+            "1":
+                - 1
+            "2":
+                - 1
+            "3":
+                - 2
+                - 13
+                - 16
+            "4": 3.10.0
+            "5": 0.23.1
+            "8":
+                - 3
+            "12": 0.23.1
+            "13": windows-amd64
+ablate_feature:
+    value: none
+actions:
+    value: 1
+batch_size:
+    value: 128
+epochs:
+    value: 2
+genome:
+    value:
+        bumpiness: -6.683915232551735
+        game_over: 189.27613725914273
+        holes: -3.743561101942274
+        lines_removed: 8.594602383216944
+        pillar: -11.042880500059761
+        survival_instinct: 8.388926084018738
+        total_height: -0.17634932529980674
+        y_pos_punish: 117.90325502640637
+        y_pos_reward: 207.81525814829266
+height_metric:
+    value: max_height
+hidden_sizes:
+    value:
+        - 32
+        - 32
+        - 32
+lr:
+    value: 0.01
+max_memory:
+    value: 30000
+slow_drop:
+    value: false
+states:
+    value: 6
+total_games:
+    value: 10000
+use_max_height:
+    value: true

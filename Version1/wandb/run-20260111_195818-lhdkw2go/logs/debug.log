@@ -1,0 +1,26 @@
+2026-01-11 19:58:18,115 INFO    MainThread:1360 [wandb_setup.py:_flush():80] Current SDK version is 0.23.1
+2026-01-11 19:58:18,115 INFO    MainThread:1360 [wandb_setup.py:_flush():80] Configure stats pid to 1360
+2026-01-11 19:58:18,115 INFO    MainThread:1360 [wandb_setup.py:_flush():80] Loading settings from C:\Users\2016s\.config\wandb\settings
+2026-01-11 19:58:18,115 INFO    MainThread:1360 [wandb_setup.py:_flush():80] Loading settings from C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\Version1\wandb\settings
+2026-01-11 19:58:18,115 INFO    MainThread:1360 [wandb_setup.py:_flush():80] Loading settings from environment variables
+2026-01-11 19:58:18,115 INFO    MainThread:1360 [wandb_init.py:setup_run_log_directory():714] Logging user logs to C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\Version1\wandb\run-20260111_195818-lhdkw2go\logs\debug.log
+2026-01-11 19:58:18,116 INFO    MainThread:1360 [wandb_init.py:setup_run_log_directory():715] Logging internal logs to C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\Version1\wandb\run-20260111_195818-lhdkw2go\logs\debug-internal.log
+2026-01-11 19:58:18,116 INFO    MainThread:1360 [wandb_init.py:init():841] calling init triggers
+2026-01-11 19:58:18,116 INFO    MainThread:1360 [wandb_init.py:init():846] wandb.init called with sweep_config: {}
+config: {'genome': {'game_over': 189.27613725914273, 'survival_instinct': 8.388926084018738, 'total_height': -0.17634932529980674, 'lines_removed': 8.594602383216944, 'holes': -3.743561101942274, 'bumpiness': -6.683915232551735, 'pillar': -11.042880500059761, 'y_pos_reward': 207.81525814829266, 'y_pos_punish': 117.90325502640637}, 'lr': 0.01, 'states': 5, 'ablate_feature': 'height', 'use_max_height': False, 'use_height_variance': False, 'use_danger_height': False, 'height_metric': 'TOTAL_HEIGHTS', 'hidden_sizes': [32, 32, 32], 'actions': 1, 'max_memory': 30000, 'batch_size': 128, 'epochs': 2, 'total_games': 10000, 'slow_drop': False, '_wandb': {}}
+2026-01-11 19:58:18,116 INFO    MainThread:1360 [wandb_init.py:init():889] starting backend
+2026-01-11 19:58:20,443 INFO    MainThread:1360 [wandb_init.py:init():892] sending inform_init request
+2026-01-11 19:58:20,468 INFO    MainThread:1360 [wandb_init.py:init():900] backend started and connected
+2026-01-11 19:58:20,469 INFO    MainThread:1360 [wandb_init.py:init():970] updated telemetry
+2026-01-11 19:58:20,801 INFO    MainThread:1360 [wandb_init.py:init():994] communicating run to backend with 90.0 second timeout
+2026-01-11 19:58:22,040 INFO    MainThread:1360 [wandb_init.py:init():1041] starting run threads in backend
+2026-01-11 19:58:22,138 INFO    MainThread:1360 [wandb_run.py:_console_start():2521] atexit reg
+2026-01-11 19:58:22,138 INFO    MainThread:1360 [wandb_run.py:_redirect():2369] redirect: wrap_raw
+2026-01-11 19:58:22,138 INFO    MainThread:1360 [wandb_run.py:_redirect():2438] Wrapping output streams.
+2026-01-11 19:58:22,138 INFO    MainThread:1360 [wandb_run.py:_redirect():2461] Redirects installed.
+2026-01-11 19:58:22,143 INFO    MainThread:1360 [wandb_init.py:init():1081] run started, returning control to user process
+2026-01-11 21:41:17,192 INFO    MainThread:1360 [wandb_run.py:_finish():2287] finishing run 2016simob-hamburg-university-of-technology/tetris-ai-v1/lhdkw2go
+2026-01-11 21:41:17,192 INFO    MainThread:1360 [wandb_run.py:_atexit_cleanup():2486] got exitcode: 0
+2026-01-11 21:41:17,194 INFO    MainThread:1360 [wandb_run.py:_restore():2468] restore
+2026-01-11 21:41:17,194 INFO    MainThread:1360 [wandb_run.py:_restore():2474] restore done
+2026-01-11 21:41:18,292 INFO    MainThread:1360 [wandb_run.py:_footer_sync_info():3862] logging synced files

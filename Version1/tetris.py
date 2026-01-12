@@ -9,9 +9,12 @@ from ai_board import AI_board
 
 
 class Tetris:
-    def __init__(self,i=1,SLOW_DROP=True,ablate_feature=None):
+    def __init__(self,i=1,SLOW_DROP=True,ablate_feature=None,use_max_height=False,use_height_variance=False,use_danger_height=False):
         self.SLOW_DROP = SLOW_DROP
         self.ablate_feature = ablate_feature
+        self.use_max_height = use_max_height
+        self.use_height_variance = use_height_variance
+        self.use_danger_height = use_danger_height
         self.set_window_position(i)
         pygame.init()
         if not RENDER:
@@ -22,7 +25,7 @@ class Tetris:
         pygame.display.set_caption('Tetris')
         self.games = 1
 
-        self.game = Game(ablate_feature=ablate_feature)
+        self.game = Game(ablate_feature=ablate_feature, use_max_height=use_max_height, use_height_variance=use_height_variance, use_danger_height=use_danger_height)
         if RENDER:
             self.scoreboard = Scoreboard()
             #self.preview = Preview()
@@ -51,7 +54,7 @@ class Tetris:
         os.environ['SDL_VIDEO_WINDOW_POS'] = f"{x},{y}"
 
     def reset(self):
-        self.game = Game(ablate_feature=self.ablate_feature)
+        self.game = Game(ablate_feature=self.ablate_feature, use_max_height=self.use_max_height, use_height_variance=self.use_height_variance, use_danger_height=self.use_danger_height)
         if RENDER:
             # self.scoreboard = Scoreboard()
             self.scoreboard.reset()

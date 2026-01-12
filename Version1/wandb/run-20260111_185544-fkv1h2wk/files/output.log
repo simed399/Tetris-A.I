@@ -1,0 +1,22 @@
+No saved model found. Using a new model.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\Version1\train.py", line 308, in run_game
+    t.run_simulation(n)
+  File "C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\Version1\train.py", line 175, in run_simulation
+    agent.remember(old_state, best_state, reward, done)
+  File "C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\Version1\agent.py", line 109, in remember
+    current_q_value = self.model1(state_tensor)
+  File "C:\Users\2016s\Desktop\tetris AI new\venv\lib\site-packages\torch\nn\modules\module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\2016s\Desktop\tetris AI new\venv\lib\site-packages\torch\nn\modules\module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\Version1\model.py", line 17, in forward
+    x = f.relu(self.layer1(x))
+  File "C:\Users\2016s\Desktop\tetris AI new\venv\lib\site-packages\torch\nn\modules\module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\2016s\Desktop\tetris AI new\venv\lib\site-packages\torch\nn\modules\module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\2016s\Desktop\tetris AI new\venv\lib\site-packages\torch\nn\modules\linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (1x6 and 5x32)

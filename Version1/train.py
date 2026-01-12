@@ -14,13 +14,16 @@ BATCH_SIZE = 128
 EPOCHS = 2
 
 class Training_Simulation:
-    def __init__(self, genome, i, generation, total_games, SLOW_DROP=True, use_wandb=False, ablate_feature=None):
+    def __init__(self, genome, i, generation, total_games, SLOW_DROP=True, use_wandb=False, ablate_feature=None, use_max_height=False, use_height_variance=False, use_danger_height=False):
         self.generation = generation
         self.i = i
         self.ablate_feature = ablate_feature
+        self.use_max_height = use_max_height
+        self.use_height_variance = use_height_variance
+        self.use_danger_height = use_danger_height
         # Calculate number of states based on ablation
         states_count = 6 if ablate_feature is None else 5
-        self.tetris = Tetris(i=i, SLOW_DROP=SLOW_DROP, ablate_feature=ablate_feature)
+        self.tetris = Tetris(i=i, SLOW_DROP=SLOW_DROP, ablate_feature=ablate_feature, use_max_height=use_max_height, use_height_variance=use_height_variance, use_danger_height=use_danger_height)
         self.weight = genome
         self.data = [MAX_MEMORY, states_count, HIDDEN_SIZES, ACTIONS, BATCH_SIZE, LR, EPOCHS, total_games]
         self.agent = Agent(self.data)
@@ -28,8 +31,9 @@ class Training_Simulation:
 
     def calculate_rewards(self, best_state):
         # Reconstruct full state from potentially ablated state
-        # The state dict in game.py maintains order: total_heights, bumpiness, lines_removed, holes, y_pos, pillar
-        feature_names = ['total_heights', 'bumpiness', 'lines_removed', 'holes', 'y_pos', 'pillar']
+        # The state dict in game.py maintains order: height, bumpiness, lines_removed, holes, y_pos, pillar
+        # Note: 'height' is either total_heights or max_height depending on use_max_height flag
+        feature_names = ['height', 'bumpiness', 'lines_removed', 'holes', 'y_pos', 'pillar']
         
         # If ablation is active, one feature is missing
         if self.ablate_feature:
@@ -47,7 +51,7 @@ class Training_Simulation:
                     full_state[fname] = state_list[state_idx]
                     state_idx += 1
             
-            total_heights = full_state['total_heights']
+            height = full_state['height']
             bumpiness = full_state['bumpiness']
             lines_removed = full_state['lines_removed']
             holes = full_state['holes']
@@ -55,24 +59,24 @@ class Training_Simulation:
             pillar = full_state['pillar']
         else:
             # No ablation, unpack normally
-            total_heights, bumpiness, lines_removed, holes, y_pos, pillar = best_state
+            height, bumpiness, lines_removed, holes, y_pos, pillar = best_state
         
         calc_reward = 0
 
-        # Define when the board is "half-full"
-        board_half_full = total_heights >= 110 or (total_heights >= 90 and bumpiness >= 10)
+        # Define when the board is "half-full" (using height feature)
+        board_half_full = height >= 110 or (height >= 90 and bumpiness >= 10)
 
-        if total_heights >= 140 or (total_heights >= 110 and bumpiness >= 12):
+        if height >= 140 or (height >= 110 and bumpiness >= 12):
             hole_penalty = -2.743561101942274  # Reduced penalty when board is high
-        elif total_heights >= 90 or (total_heights >= 70 and bumpiness >= 9):
+        elif height >= 90 or (height >= 70 and bumpiness >= 9):
             hole_penalty = -4.743561101942274
         else:
             hole_penalty = self.weight['holes']
 
         # Discourage Placing High When Board is Low
-        if total_heights <= 40:  # Board is mostly empty
+        if height <= 40:  # Board is mostly empty
             high_placement_penalty = (10 - y_pos) * 2  # Stronger penalty
-        elif total_heights <= 100:  # Board is partially filled
+        elif height <= 100:  # Board is partially filled
             high_placement_penalty = (10 - y_pos)  # Moderate penalty
         else:
             high_placement_penalty = 0  # No penalty when the board is high
@@ -95,7 +99,7 @@ class Training_Simulation:
             calc_reward -= (10 - y_pos) * 0.2 - self.weight['y_pos_punish']  # Gradual penalty for high stacking
 
         # Penalty for total board height
-        calc_reward += self.weight['total_height'] * total_heights  # Encourage keeping the board low
+        calc_reward += self.weight['total_height'] * height  # Encourage keeping the board low
 
         # Line clear reward (scaled)
         calc_reward += (2 ** lines_removed) * self.weight['lines_removed']  # Scaled reward for big clears
@@ -225,7 +229,7 @@ class Training_Simulation:
 
         return tetris.scoreboard.hiscore, lines, tetris_clears
 
-def run_game(SLOW_DROP=True, use_wandb=True, ablate_feature=None):
+def run_game(SLOW_DROP=True, use_wandb=True, ablate_feature=None, use_max_height=False, use_height_variance=False, use_danger_height=False):
     genome = {
         'game_over': 189.27613725914273,
         'survival_instinct': 8.388926084018738,
@@ -239,21 +243,38 @@ def run_game(SLOW_DROP=True, use_wandb=True, ablate_feature=None):
     }
     n = 10000
     
-    # Determine run name based on ablation
+    # Determine height metric type
+    if use_danger_height:
+        height_type = "dangerheight"
+        height_display = "DANGER_HEIGHT"
+    elif use_height_variance:
+        height_type = "heightvariance"
+        height_display = "HEIGHT_VARIANCE"
+    elif use_max_height:
+        height_type = "maxheight"
+        height_display = "MAX_HEIGHT"
+    else:
+        height_type = "totalheight"
+        height_display = "TOTAL_HEIGHTS"
+    
+    # Determine run name based on configuration
     if ablate_feature:
-        run_name = f"ablation_no_{ablate_feature}_slowdrop_{SLOW_DROP}"
+        run_name = f"ablation_no_{ablate_feature}_{height_type}_slowdrop_{SLOW_DROP}"
         print(f'\n=== Running Ablation Study ===')
         print(f'Removing feature: "{ablate_feature}"')
-        feature_names = ['total_heights', 'bumpiness', 'lines_removed', 'holes', 'y_pos', 'pillar']
+        feature_names = ['height', 'bumpiness', 'lines_removed', 'holes', 'y_pos', 'pillar']
         active_features = [f for f in feature_names if f != ablate_feature]
         print(f'Active features: {active_features}')
         print(f'State size: 5 (removed 1 from 6)')
     else:
-        run_name = f"baseline_slowdrop_{SLOW_DROP}"
+        run_name = f"baseline_{height_type}_slowdrop_{SLOW_DROP}"
         print(f'\n=== Running Baseline ===')
-        print(f'Using all 6 features: [total_heights, bumpiness, lines_removed, holes, y_pos, pillar]')
+        print(f'Using all 6 features: [height, bumpiness, lines_removed, holes, y_pos, pillar]')
         print(f'State size: 6')
     
+    print(f'Height metric: {height_display}')
+    if use_danger_height:
+        print(f'  (Danger height = max(0, tallest_column - 15))')
     print(f'SLOW_DROP={SLOW_DROP}')
     print(f'Wandb tracking: {use_wandb}')
     print(f'Run name: {run_name}\n')
@@ -268,6 +289,10 @@ def run_game(SLOW_DROP=True, use_wandb=True, ablate_feature=None):
                 "lr": LR,
                 "states": states_count,
                 "ablate_feature": ablate_feature if ablate_feature else "none",
+                "use_max_height": use_max_height,
+                "use_height_variance": use_height_variance,
+                "use_danger_height": use_danger_height,
+                "height_metric": height_display,
                 "hidden_sizes": HIDDEN_SIZES,
                 "actions": ACTIONS,
                 "max_memory": MAX_MEMORY,
@@ -279,7 +304,7 @@ def run_game(SLOW_DROP=True, use_wandb=True, ablate_feature=None):
             name=run_name
         )
     
-    t = Training_Simulation(genome, 1, False, n, SLOW_DROP, use_wandb, ablate_feature)
+    t = Training_Simulation(genome, 1, False, n, SLOW_DROP, use_wandb, ablate_feature, use_max_height, use_height_variance, use_danger_height)
     t.run_simulation(n)
     
     if use_wandb:

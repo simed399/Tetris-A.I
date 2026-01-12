@@ -1,0 +1,20 @@
+No saved model found. Using a new model.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\Version1\train.py", line 308, in run_game
+    t.run_simulation(n)
+  File "C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\Version1\train.py", line 169, in run_simulation
+    reward, done = tetris.play_full(best_action)
+  File "C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\Version1\tetris.py", line 137, in play_full
+    self.play_step()
+  File "C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\Version1\tetris.py", line 152, in play_step
+    self.game.run()
+  File "C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\Version1\game.py", line 289, in run
+    self._display_game()
+  File "C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\Version1\game.py", line 72, in _display_game
+    self.sprites.draw(self.surface)
+  File "C:\Users\2016s\Desktop\tetris AI new\venv\lib\site-packages\pygame\sprite.py", line 573, in draw
+    surface.blits(
+  File "C:\Users\2016s\Desktop\tetris AI new\venv\lib\site-packages\pygame\sprite.py", line 573, in <genexpr>
+    surface.blits(
+KeyboardInterrupt

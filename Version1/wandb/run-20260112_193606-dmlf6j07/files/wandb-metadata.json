@@ -1,0 +1,38 @@
+{
+  "os":  "Windows-10-10.0.26100-SP0",
+  "python":  "CPython 3.10.0",
+  "startedAt":  "2026-01-12T18:36:06.573439Z",
+  "program":  "<python with no main file>",
+  "git":  {
+    "remote":  "https://github.com/simed399/Tetris-A.I.git",
+    "commit":  "beb991d59fdc0b7b770cfc84cf4a665f468c6218"
+  },
+  "email":  "2016simob@gmail.com",
+  "root":  "C:\\Users\\2016s\\Desktop\\tetris AI new\\Tetris-A.I\\Version1",
+  "host":  "DESKTOP-EO7ICM8",
+  "executable":  "C:\\Users\\2016s\\Desktop\\tetris AI new\\venv\\scripts\\python.exe",
+  "cpu_count":  4,
+  "cpu_count_logical":  8,
+  "gpu":  "NVIDIA GeForce GTX 1050",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "509625757696",
+      "used":  "490655985664"
+    }
+  },
+  "memory":  {
+    "total":  "17092849664"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce GTX 1050",
+      "memoryTotal":  "2147483648",
+      "cudaCores":  640,
+      "architecture":  "Pascal",
+      "uuid":  "GPU-8a70459a-e848-162c-5199-acc41e7b6a10"
+    }
+  ],
+  "cudaVersion":  "12.2",
+  "writerId":  "5c8luliirgkqshua2livl0qwvkso5sv5"
+}

@@ -1,0 +1,12 @@
+No saved model found. Using a new model.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\Version1\train.py", line 308, in run_game
+    t.run_simulation(n)
+  File "C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\Version1\train.py", line 143, in run_simulation
+    next_states = {tuple(v): k for k, v in tetris.game.calc_all_states().items()}
+  File "C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\Version1\game.py", line 230, in calc_all_states
+    states[(x_pivot,r)] = self.get_state(board, lines_removed, self.ablate_feature)
+  File "C:\Users\2016s\Desktop\tetris AI new\Tetris-A.I\Version1\game.py", line 255, in get_state
+    max_col_height = max(cols) if len(cols) > 0 else 0
+KeyboardInterrupt
